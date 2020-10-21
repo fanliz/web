@@ -138,7 +138,7 @@ body {
 	</p>
 	<div class="beatWord">
 		<fieldset>
-			<legend id="copy_tip">长按框内>全选>复制>打开手淘</legend>
+			<legend id="copy_tip">长按框内>全选>复制>打开手淘>粘贴搜索 </legend>
 			<p id="itemWord" class="itemWord" style="font-size: 12px;">复制框内整段文字，打开「手淘」在搜索框粘贴并搜索，即可「领取优惠券」并购买<span id="taokey"></span></p>
 		</fieldset>
 		<button id="copy" type="button" data-clipboard-text="" class="itemCopy" style="display:none;">手机链接</button>
@@ -266,7 +266,7 @@ $(function() {
 
 	if (ua.match(/iphone/i) == "iphone" || ua.match(/ipad/i) == "ipad") {
 
-		$('#copy_tip').text("长按框内 > 拷贝 > 打开手淘");
+		$('#copy_tip').text("长按框内 > 拷贝 > 打开手淘 > 粘贴搜索");
 		var iphoneInfo = ua.match(/iphone os (\d{1,})/i);
 		var iosVersion = iphoneInfo[1];
 		if (iosVersion >= 10 || ua.match(/ipad/i) == 'ipad') {
