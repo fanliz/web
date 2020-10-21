@@ -183,7 +183,7 @@ var clipboard = new Clipboard('.itemCopy');
 clipboard.on('success',
 function(e) {
 	if (e.trigger.disabled == false || e.trigger.disabled == undefined) {
-		e.trigger.innerHTML = "复制成功，打开淘宝会自动弹出口令";
+		e.trigger.innerHTML = "复制成功，打开淘宝粘贴口令";
 		e.trigger.style.backgroundColor = "#9ED29E";
 		e.trigger.style.borderColor = "#9ED29E";
 		//e.clearSelection();
